@@ -1,0 +1,6 @@
+<?php
+/**
+ * Code snippets to disable MailOptin tracking of form impression.
+ */
+ 
+add_filter('mo_disable_impression_tracking', function() {return 'true';});
