@@ -1,4 +1,7 @@
 <?php
+/**
+ * Code snippets modifies the double optin email mailoptin usually send when a user subscribes.
+ */
 
 add_filter('mo_mailjet_confirm_email_subject', function () {
     return 'Confirm your subscription';
