@@ -14,3 +14,7 @@ add_filter('mo_mailjet_confirm_email_message_content', function () {
 add_filter('mo_mailjet_confirm_email_button_text', function () {
     return 'Confirm Subscription Now';
 });
+
+add_filter('mo_mailjet_confirmed_message', function () {
+	return 'Your subscription has been confirmed.';
+});
