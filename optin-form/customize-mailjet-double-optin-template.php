@@ -3,7 +3,7 @@
  * Code snippets to customize Mailjet's double optin template
  */
 
-add_filter('mo_mailjet_confirm_email_template', function($content) {
+add_filter('mo_mailjet_confirm_email_template', function($content, $url, $message_content, $button_text) {
     ob_start();
     ?>
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -255,4 +255,4 @@ add_filter('mo_mailjet_confirm_email_template', function($content) {
 
     return ob_get_clean();
 
-});
+}, 10, 4);
