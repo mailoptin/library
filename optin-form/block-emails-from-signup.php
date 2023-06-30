@@ -2,7 +2,7 @@
 /**
  * Code snippets to block signups from specific email addresses.
  */
-add_filter('mo_subscription_form_error', function ($response, ConversionDataBuilder $conversion_data) {
+add_filter('mo_subscription_form_error', function ($response, $conversion_data) {
 
     $blocked_email = [
         'sample@gmail.com'
